@@ -171,7 +171,7 @@ static char *empty = ""; /* ok to be static */
 
 int ErrMsgTxt(structlpsolvecaller *lpsolvecaller, char *str)
 {
-        php_error_docref(NULL TSRMLS_CC, E_ERROR, "%s", str);
+        php_error_docref(NULL, E_ERROR, "%s", str);
         return(0);
 }
 
